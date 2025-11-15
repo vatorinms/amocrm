@@ -4,7 +4,7 @@ import axios from "axios";
 const app = express();
 app.use(express.json());
 
-const AMO_DOMAIN = "yourdomain.amocrm.ru";
+const AMO_DOMAIN = "liansoft.amocrm.ru";
 const ACCESS_TOKEN = "YOUR_ACCESS_TOKEN";
 
 app.post("/email-read", async (req, res) => {
@@ -22,7 +22,7 @@ app.post("/email-read", async (req, res) => {
         text: "Письмо прочитано. Связаться с клиентом!",
         complete_till: Math.floor(Date.now() / 1000) + 3600
       }],
-      { headers: { Authorization: `Bearer ${ACCESS_TOKEN}` } }
+      { headers: { Authorization: `Bearer ${DuOT9p50vyY12lnS4BYcfra8geGhUNGeEN0VIWILhYnBsh3bvmhJIGiiFFdr4Ehp}` } }
     );
     res.send("Task created");
   } catch (e) {
